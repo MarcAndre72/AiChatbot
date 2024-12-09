@@ -38,6 +38,14 @@ A functional AI chatbot that demonstrates real-world tool integration capabiliti
   - Safe mathematical expression evaluator
   - Extensible tool integration framework
 
+## Important note before setting in "other" environnement:
+The code is already set up to read from Replit's Secrets system using os.environ.get(). That's why you don't need a .env file. The environment variables are automatically loaded from Replit's Secrets.
+
+After setting up both secrets correctly:
+
+Run the backend: python -m backend.main
+In a second terminal: streamlit run frontend/app.py --server.port 5000
+
 ## Quick Start
 
 1. Clone the repository:
