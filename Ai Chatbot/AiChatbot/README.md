@@ -43,6 +43,14 @@ The code is already set up to read from Replit's Secrets system using os.environ
 
 After setting up both secrets correctly:
 
+the forked project:
+
+About the .replit file difference - yes, it's normal. Replit creates a default configuration when you fork a project. The important part is having Python installed, which your fork has (python-3.12).
+
+For the FastAPI error, you'll need to install the required dependencies first. In your forked project, run this command:
+
+pip install fastapi uvicorn google-generativeai streamlit requests sse-starlette
+
 Run the backend: python -m backend.main
 In a second terminal: streamlit run frontend/app.py --server.port 5000
 
