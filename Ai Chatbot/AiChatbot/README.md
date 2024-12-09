@@ -51,8 +51,11 @@ For the FastAPI error, you'll need to install the required dependencies first. I
 
 pip install fastapi uvicorn google-generativeai streamlit requests sse-starlette
 
-Run the backend: python -m backend.main
-In a second terminal: streamlit run frontend/app.py --server.port 5000
+After installing the dependencies:
+
+1) Start the backend: python -m backend.main
+   
+2) In a second terminal: streamlit run frontend/app.py --server.port 5000
 
 ## Quick Start
 
